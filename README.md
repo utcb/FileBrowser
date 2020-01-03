@@ -1,4 +1,4 @@
-这个fork的版本，主要是为了在RN>0.6的版本中，和prscX/react-native-file-selector使用，Podfile中可以不再添加“use_frameworks!”指令。
+这个fork的版本，主要是为了在RN>0.6的版本中，和[prscX/react-native-file-selector](https://github.com/prscX/react-native-file-selector)使用，Podfile中可以不再添加“use_frameworks!”指令。注意，因为RN生成的skeleton files仍旧是OBJ-C，为了支持swift，需要手工向项目文件里添加一个任意的swift文件。
 
 
 ![FileBrowser - iOS Finder-style file browser in Swift](https://cloud.githubusercontent.com/assets/889949/13035402/75e4eb00-d34f-11e5-8b92-c921ecca9300.png)
