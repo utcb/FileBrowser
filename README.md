@@ -1,3 +1,6 @@
+这个fork的版本，主要是为了在RN>0.6的版本中，和prscX/react-native-file-selector使用，Podfile中可以不再添加“use_frameworks!”指令。
+
+
 ![FileBrowser - iOS Finder-style file browser in Swift](https://cloud.githubusercontent.com/assets/889949/13035402/75e4eb00-d34f-11e5-8b92-c921ecca9300.png)
 
 [![Build Status](https://travis-ci.org/marmelroy/FileBrowser.svg?branch=master)](https://travis-ci.org/marmelroy/FileBrowser) [![Version](http://img.shields.io/cocoapods/v/FileBrowser.svg)](http://cocoapods.org/?q=FileBrowser)
