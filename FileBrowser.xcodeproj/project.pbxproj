@@ -219,6 +219,7 @@
 				344169501C67812400B93D28 /* Frameworks */,
 				344169511C67812400B93D28 /* Headers */,
 				344169521C67812400B93D28 /* Resources */,
+				6DD1D32823BEE33F008A7635 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -273,6 +274,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3441694A1C67812400B93D28;
@@ -313,6 +315,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DD1D32823BEE33F008A7635 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${PODS_ROOT}\" == \"\" ];then\n  echo \"PODS_ROOT does not defined, exit.\"\n  exit 0\nfi\nif [ -d \"${PODS_ROOT}/Headers/Public/FileBrowser\" ] \nthen\n    ditto \"${BUILT_PRODUCTS_DIR}/FileBrowser.framework/Headers/FileBrowser-Swift.h\" \"${PODS_ROOT}/Headers/Public/FileBrowser/FileBrowser-Swift.h\"\nelse\n    echo \"Error: Directory ${PODS_ROOT}/Headers/Public/FileBrowser does not exists.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3441694F1C67812400B93D28 /* Sources */ = {
@@ -477,6 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -495,6 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.roymarmelstein.FileBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
